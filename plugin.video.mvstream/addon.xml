@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon 
+	id="plugin.video.mvstream" 
+	name="stream.mv"
+	version="0.0.1"
+	provider-name="@kudanai">
+
+	<requires>
+		<import addon="xbmc.python" version="2.0"/>
+		<import addon="script.module.mechanize" optional="false"/>
+		<import addon="script.module.beautifulsoup" optional="false"/>
+	</requires>
+
+	<extension point="xbmc.python.pluginsource" library="addon.py" debugging="true">
+		<provides>video</provides>
+	</extension>
+	
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">XBMC plugin for http://stream.mv video streams</summary>
+		<description lang="en">Unofficial plugin to stream TV video from Maldivian Broadcasers, through the stream.mv website. You must have a registered account, and appropriate subscription for this to work.
+		</description>
+		<disclaimer lang="en">This is an unofficial plugin. @kudanai will not be liable for any chargers incurred or damages caused due to its use.</disclaimer>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<website>http://stream.mv</website>
+		<email>info@kudanai.com</email>
+	</extension>
+
+</addon>
