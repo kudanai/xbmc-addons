@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.dhiraaguadsl"
+       name="Dhiraagu ADSL"
+       version="0.0.1"
+       provider-name="@kudanai">
+
+
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.mechanize" optional="false"/>
+    <import addon="script.module.beautifulsoup" optional="false"/>
+  </requires>
+
+  <extension point="xbmc.python.script" library="addon.py" debugging="true"/>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>28764</minversion>
+    <summary lang="en">Plugin to display ADSL usage graph from Dhiraagu online portal</summary>
+    <description lang="en">This plugin will only work on Dhiraagu networks, as the portal is no reachable from outside. It will give you a brief description of your ADSL package, and the display the current ADSL usage graph</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+    <website>http://kudanai.com</website>
+    <email>info@kudanai.com</email>
+  </extension>
+</addon>
