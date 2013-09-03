@@ -1,1 +1,5 @@
-0.1 - initial release
+0.0.2 - 3rd sep
+	+ thumbnail icons for stream links
+	* code cleanup
+
+0.0.1 - initial release
