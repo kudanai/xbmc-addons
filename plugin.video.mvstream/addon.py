@@ -97,8 +97,10 @@ if __name__ == '__main__':
 
 	if not username or not password:
 		__settings__.openSettings()
+		success=False
 	else:
 		urls=get_stream_urls(username,password)
 		add_urls(urls)
+		success=True
 	
-	xbmcplugin.endOfDirectory(int(sys.argv[1]))
+	xbmcplugin.endOfDirectory(int(sys.argv[1]),success)
